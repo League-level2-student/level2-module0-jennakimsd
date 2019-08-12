@@ -76,7 +76,9 @@ public class _02_FindTheHiddenButton implements ActionListener{
 		JButton buttonClicked = (JButton)e.getSource();
 		
 		//17. if the hiddenButton is clicked, tell the user that they win.
-		
+		if(buttonClicked==button[hiddenButton]) {
+			JOptionPane.showMessageDialog(null, "you won!");
+		}
 		//18. else tell them to try again
 		else {
 			JOptionPane.showMessageDialog(null, "try again");
